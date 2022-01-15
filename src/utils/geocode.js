@@ -39,7 +39,7 @@ const forecast = (data , callback) =>{
             callback(undefined , 
                 body.current.weather_descriptions[0] + ". It is currently " + body.current.temperature 
                 + ' degrees Celsius out. \nFeels like ' + body.current.feelslike 
-                + ' degrees Celsius out. The humidity is ' + body.humidity + '%.')
+                + ' degrees Celsius out. The humidity is ' + body.current.humidity + '%.')
         }
     })
 }
